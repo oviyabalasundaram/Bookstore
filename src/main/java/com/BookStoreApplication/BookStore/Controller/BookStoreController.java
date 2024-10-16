@@ -29,7 +29,7 @@ public class BookStoreController {
 	
 @GetMapping(value ="/home")
 public String home() {
-	return "home";
+	return "index";
 }
 
 @GetMapping(value="/book_register")
