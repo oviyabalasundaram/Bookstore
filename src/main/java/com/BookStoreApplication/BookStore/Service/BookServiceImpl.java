@@ -22,5 +22,12 @@ public class BookServiceImpl {
 		
 		return bookRepository.findAll() ;
 	}
+	public Book getBookById(int id) {
+		return bookRepository.findById(id).get();
+	}
+	public void  deleteById(int id) {
+		bookRepository.deleteById(id);
+	}
+
 
 }
